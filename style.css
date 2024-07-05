@@ -1,0 +1,314 @@
+*{padding:0;
+margin:0;}
+
+/* 基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* 海洋主题背景颜色 */
+}
+
+
+/* 导航栏样式 */
+nav {
+    background: rgba(65,105,225,0.8);
+    color: white;
+    padding: 1em;
+    position:fixed;
+    width:100%;
+    z-index: 10
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative; /* 使下拉菜单定位相对父元素 */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:20px
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 隐藏下拉菜单 */
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* 使下拉菜单水平居中 */
+    background: rgba(65, 105, 225, 0.9);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li ul.dropdown li {
+    width: 180px; /* 设置下拉菜单项的宽度 */
+}
+
+nav ul li ul.dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap; /* 防止下拉菜单项换行 */
+    text-align: center; /* 使下拉菜单项文字居中 */
+}
+
+nav ul li ul.dropdown li a:hover {
+    background: rgba(0, 0, 139, 0.9);
+}
+
+/* 显示下拉菜单 */
+nav ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+
+/* 各部分样式 */
+section.one {
+height:100vh;
+background-image:url("images/海洋.jpeg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+section.one h1{font-size:80px;
+color:white;
+}
+
+
+section.two h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+section.two p {
+    font-size: 25px;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+    text-indent: 2em;
+}
+
+div.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+}
+
+div.info p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+div.info img {
+    flex: 1;
+    max-width: 400px;
+    height: 250px;
+}
+
+
+section.three h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+section.three p {
+    font-size: 25px;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+    text-indent: 2em;
+}
+
+section.three img.img1 {width:80%;
+height:auto;
+display:block;
+margin:auto
+}
+
+div.info1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+}
+
+div.info1 img.img2 {
+    flex: 1;
+    max-width: 800px;
+    height: auto;
+}
+
+div.info1 img.img3 {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+}
+
+
+section.four h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 40px;
+}
+
+section.four h3 {
+    margin: 20px auto 20px;
+    font-size: 30px;
+    width: calc(100% - 160px);
+    color:red
+}
+
+section.four p {
+    font-size: 25px;
+    margin: 20px auto 20px;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+    text-indent: 2em;
+}
+
+div.info11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+}
+
+div.info11 img.zj {
+    flex: 1;
+    max-width: 600px;
+    height: 350px;
+}
+
+div.info11 img.zjzyzb {
+    flex: 1;
+    max-width: 600px;
+    height: 350px;
+}
+
+div.info12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+}
+
+div.info12 p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+div.info12 img {
+    flex: 1;
+    max-width: 500px;
+    height: 250px;
+}
+
+div.info13 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+}
+
+div.info13 p {
+    flex: 1;
+    margin-left: 20px;
+}
+
+div.info13 img {
+    flex: 1;
+    max-width: 500px;
+    height: 250px;
+}
+
+div.bordered-text  {border: 2px solid black; /* 设置边框颜色和宽度 */
+    background-color: white; /* 设置背景颜色 */
+    padding: 0; /* 设置内边距，确保文本不紧贴边框 */
+    margin: 0 80px;
+    border-radius: 5px; /* 设置圆角边框，可选 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果，可选 */}
+
+.highlight {
+    color: red; /* 设置高亮颜色 */
+}
+
+.img10 {width:80%;
+height:auto;
+display:block;
+margin:auto}
+
+.img11 {width:960px;
+height:540px;
+display:block;
+margin:auto}
+
+
+
+section.five h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+
+section.five p {
+    font-size: 25px;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+    text-indent: 2em;
+}
+
+section.five {
+height:100vh;
+background-image:url("images/结尾图.png");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+align-items:center;
+justify-content:center;
+}
+
+div.last {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: calc(100% - 160px); /* 保证宽度与左右margin之和为100% */
+}
+
+div.last p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+div.last img {
+    flex: 1;
+    max-width: 500px;
+    height: 250px;
+}
